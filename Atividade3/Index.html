@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre Segurança web">
+    <meta name="keywords" content="Segurança web">
+    <meta name="author" content="Nicollas">
+    <title>Segurança Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Segurança web</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#conceito">Conceitos</a></li>
+                <li><a href="#praticas_recomendadas">Praticas Recomendadas</a></li>
+                <li><a href="#ferramentas_e_tendencias">Ferramentas e tendencias</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2 id="conceitos">Conceitos</h2>
+            <article>
+                <p>Os conceitos de segurança web pode ser divididos em 7 partes sendo eles:</p>
+
+                <p> <strong>Autenticação e Autorização:</strong> Esses conceitos são fundamentais para garantir que
+                    apenas usuários
+                    autorizados
+                    tenham acesso aos recursos de um sistema ou aplicativo. A autenticação confirma a identidade do
+                    usuário,
+                    enquanto a autorização controla quais recursos o usuário pode acessar após a autenticação
+                    bem-sucedida</p>
+
+                <p> <strong>Criptografia:</strong> A criptografia é essencial para proteger dados sensíveis durante a
+                    transmissão pela
+                    internet. Ela
+                    garante que mesmo se os dados forem interceptados, eles permaneçam ilegíveis para qualquer pessoa
+                    que não tenha
+                    a chave de criptografia adequada.</p>
+
+                <p> <strong>Firewalls:</strong> Os firewalls são dispositivos de segurança que monitoram e controlam o
+                    tráfego de rede
+                    com base em
+                    regras predefinidas. Eles ajudam a proteger contra ameaças externas, como ataques de hackers e
+                    malware,
+                    controlando o fluxo de dados entre redes confiáveis e não confiáveis.</p>
+
+                <p> <strong>Proteção contra Malware:</strong> Malware é um termo genérico para software malicioso, como
+                    vírus, worms,
+                    trojans e
+                    spyware. A proteção contra malware envolve o uso de programas antivírus e antispyware para detectar
+                    e remover
+                    ameaças de dispositivos e sistemas.</p>
+
+                <p> <strong>Atualizações de Software:</strong> Manter o software atualizado é crucial para garantir que
+                    os sistemas e
+                    aplicativos
+                    estejam protegidos contra vulnerabilidades conhecidas. As atualizações de segurança frequentes
+                    ajudam a corrigir
+                    falhas de segurança e melhorar a resistência contra ameaças cibernéticas.</p>
+
+                <p> <strong>Práticas de Desenvolvimento Seguro:</strong> Desenvolver aplicativos web com segurança em
+                    mente desde o
+                    início é
+                    fundamental para evitar vulnerabilidades comuns, como injeção de SQL, cross-site scripting (XSS) e
+                    cross-site
+                    request forgery (CSRF). Isso inclui validar e escapar dados de entrada, implementar controle de
+                    acesso adequado
+                    e realizar testes de segurança regulares.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="praticas_recomendadas">Praticas Recomendadas</h2>
+            <article>
+                <p>Praticar medidas de segurança web é essencial para proteger sites contra ameaças cibernéticas. Com
+                    base nos conteúdo dos links fornecidos, algumas práticas recomendadas podem ser destacadas</p>
+                <p>Em primeiro lugar, a implementação do <b>HTTPS</b> é crucial. Ele garante a criptografia das
+                    comunicações entre o navegador do usuário e o servidor, protegendo os dados transmitidos de
+                    interceptação por terceiros.</p>
+                <p>Além disso, validar e sanitizar os dados de entrada dos usuários é fundamental para prevenir ataques
+                    de injeção, como <b>SQL injection e XSS</b>. Essa prática garante que os dados inseridos pelos
+                    usuários sejam seguros e não explorem vulnerabilidades no sistema.</p>
+                <p>Outra prática importante é o controle de acesso adequado, seguindo o princípio do menor privilégio.
+                    Conceder aos usuários apenas as permissões necessárias para suas funções específicas ajuda a mitigar
+                    o risco de comprometimento.</p>
+                <p>Manter todos os sistemas e aplicativos atualizados com as últimas correções de segurança é uma
+                    prática essencial. Isso inclui o <b>sistema operacional, o software do servidor web</b> e quaisquer
+                    outros componentes do sistema.</p>
+                <p>Além disso, realizar <b>backups</b> regulares dos dados do site é crucial para garantir a
+                    disponibilidade e a integridade dos dados em caso de falha do sistema ou ataques cibernéticos. Os
+                    <b>backups</b> devem ser armazenados em locais seguros e testados regularmente para garantir sua
+                    eficácia.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="ferramentas_e_tendencias"></h2>
+            <article>
+                <p>Ferramentas e tendências desempenham papéis cruciais na evolução e na eficácia da segurança web. Aqui
+                    estão algumas das principais ferramentas e tendências observadas no campo:</p>
+                <h3>Ferramentas</h3>
+                <p><strong>Firewalls de Rede:</strong> Soluções como pfSense, iptables e Cisco ASA são empregadas para
+                    monitorar e controlar o tráfego de rede, filtrando pacotes com base em regras de segurança
+                    predefinidas.</p>
+                <p><strong>Antivírus e Anti-Malware: </strong>Programas como Malwarebytes, Avast e Norton são essenciais
+                    para detectar, bloquear e remover ameaças como vírus, worms e trojans.</p>
+                <p><strong>Ferramentas de Escaneamento de Vulnerabilidades: </strong>Soluções como Nessus, OpenVAS e
+                    Acunetix identificam e relatam vulnerabilidades em sistemas e redes para correção proativa.</p>
+                <p><strong>Sistemas de Detecção e Prevenção de Intrusões (IDS/IPS):</strong>Softwares como Snort,
+                    Suricata e Cisco Firepower monitoram o tráfego de rede em busca de atividades suspeitas, prevenindo
+                    e detectando possíveis ataques.</p>
+                <p><strong>Gerenciadores de Senhas</strong>Ferramentas como LastPass, 1Password e Bitwarden ajudam na
+                    gestão segura de senhas, facilitando o uso de senhas complexas e exclusivas.</p>
+
+                <h3>Tendencias</h3>
+                <p><Strong>Inteligência Artificial e Machine Learning:</Strong>A integração dessas tecnologias em
+                    soluções de segurança permite uma detecção mais eficaz de ameaças e adaptação a padrões de ataque em
+                    constante mudança.</p>
+                <p><strong>Segurança em Nuvem:</strong>Com a crescente adoção de serviços em nuvem, surgem soluções
+                    específicas para proteger dados e aplicativos hospedados na nuvem.</p>
+                <p><strong>Zero Trust Security Model:</strong>Este modelo desafia a confiança implícita tradicional,
+                    exigindo que todas as solicitações de acesso sejam verificadas, independentemente da origem ou
+                    destino.</p>
+                <p><strong>Autenticação Multifatorial (MFA):</strong>O MFA, que requer múltiplos métodos de
+                    autenticação, está se tornando mais comum como uma camada adicional de segurança.</p>
+                <p><strong>Privacidade e Conformidade Regulatória:</strong>Com regulamentações como GDPR e LGPD, há uma
+                    ênfase crescente na proteção da privacidade dos dados pessoais e na conformidade com as leis de
+                    proteção de dados.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Referencias</h2>
+            <article>
+                <p>MARCELA.<strong> Conceitos Básicos de Segurança da Informação: Tudo o que Você Precisa Saber</strong>. Disponível em: <a href="https://awari.com.br/conceitos-basicos-de-seguranca-da-informacao-tudo-o-que-voce-precisa-saber/?utm_source=blog&utm_campaign=projeto+blog&utm_medium=Conceitos%20B%C3%A1sicos%20de%20Seguran%C3%A7a%20da%20Informa%C3%A7%C3%A3o:%20Tudo%20o%20que%20Voc%C3%AA%20Precisa%20Saber">https://awari.com.br/conceitos-basicos-de-seguranca-da-informacao-tudo-o-que-voce-precisa-saber/</a>. Acesso em: 2 mar. 2024.</p>
+                <p> <strong>Segurança Web | MDN.</strong> Disponível em: <a href="https://developer.mozilla.org/pt-BR/docs/Web/Security">https://developer.mozilla.org/pt-BR/docs/Web/Security</a>. Acesso em: 2 mar. 2024</p>
+                <p> <strong>Segurança da Internet: o que é e como você pode se proteger on-line?</strong> Disponível em: <a href="https://www.kaspersky.com.br/resource-center/definitions/what-is-internet-security">https://www.kaspersky.com.br/resource-center/definitions/what-is-internet-security</a>.</p>
+                <p>VIDANYA, B. <strong>Segurança Web: O que é, Como Funciona e Quais os Melhores Serviços</strong>. Disponível em: <a href="https://www.hostinger.com.br/tutoriais/seguranca-web">https://www.hostinger.com.br/tutoriais/seguranca-web</a>. </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nicollas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

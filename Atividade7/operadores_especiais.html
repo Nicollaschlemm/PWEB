@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //operador condicional (?)
+        const age = 20;
+        const allowed = (age >=16) ? "Permitido votar"
+        : "Não Permitido";
+        alert(allowed);//permitido
+
+    // operador virgula (,)
+    function x(){
+        return "A";
+    }
+
+    function y(){
+        return "B";
+    }
+
+    function z(){
+        return "C";
+    }
+    var x = (x(), y(), z());
+    alert(x);//retorna c
+
+    var s = "";
+    for(var i =0, j=9; i<= 9; i++, j--){
+        s += ("[" + i + "][" + j + "]");
+    }
+    alert(s);//[0][9][1][8][2][7][3][6][4][5][5][4][6][3][7][2][8][1][9][0]
+
+    // delete
+
+    const obj = {nome : "João", endereco: "Av. Carlos Reinaldo Mendes", idade: 30};
+
+    alert(obj);//não imprime o conteudo de obj
+    alert(obj.nome, obj.endereco, obj.idade);
+    //so imprime o nome
+
+    alert(JSON.stringify(obj));//com endereco
+    delete obj.endereco;
+    alert(JSON.stringify(obj));//não imprime o edereco
+
+    //in
+     const fruit = ['apple', 'banana', 'orange'];
+     alert( 1 in fruit);
+     alert("lenght" in fruit);//true
+
+     //new 
+
+     function Person(name){
+        this.name = name;
+     }
+
+     const john = new Person('John');
+     alert(john.name);
+
+     var objP = new Object();
+     objP.nomepessoa = "pedro";
+     alert(objP.nomepessoa);
+
+     //instanceof
+     alert(john instanceof Person);
+
+     //this
+        function myFunc(){
+        alert(this);
+     }
+
+     myFunc();
+
+     var obj1 = {
+        teste: function(){
+            return(this);
+        }
+     }
+
+     alert(obj1.teste());
+
+     //Typeof
+
+     var anObj = {job: "Sou um Objeto"};
+     var aNumber = 42;
+     var aString = "Sou uma String!";
+
+     alert(typeof anObj);//ira imprimir objetct
+     alert(typeof aNumber);//ira imprimir number
+     alert(typeof aString);//ira imprimir string
+
+     //coalescencia nula (??)
+     
+     const defaulValue = "Defaul Value";
+     const userInput = null;
+     const finalValue = userInput ?? defaulValue;
+     alert(finalValue);//output : defaul value
+     
+     const name = "Mary";
+     alert(name??"name is null");
+ </script>
+</body>
+</html>

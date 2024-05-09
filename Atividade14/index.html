@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            var pala = document.getElementById("Texto");
+            var chkMaiuscula = document.getElementById("chkMaiuscula");
+            var chkMinuscula = document.getElementById("chkMinuscula");
+
+            chkMaiuscula.addEventListener("change", function() {
+                if (chkMaiuscula.checked === true) {
+                    chkMinuscula.checked = false;
+                    pala.value = pala.value.toUpperCase();
+                } else {
+                    pala.value = pala.value.toLowerCase();
+                }
+            });
+
+            chkMinuscula.addEventListener("change", function() {
+                if (chkMinuscula.checked === true) {
+                    chkMaiuscula.checked = false;
+                    pala.value = pala.value.toLowerCase();
+                } else {
+                    pala.value = pala.value.toUpperCase();
+                }
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <input type="text" id="Texto">
+    <br>
+    <input type="checkbox" name="Maiuscula" id="chkMaiuscula">Maiuscula
+    <br>
+    <input type="checkbox" name="Minuscula" id="chkMinuscula">Minuscula
+</body>
+
+</html>

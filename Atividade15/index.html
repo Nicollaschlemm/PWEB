@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <header>
+            <h1>Formulario Principal</h1>
+        </header>
+        <hr>
+        <p class="texto">Nome</p>
+        <input type="texto" id="Nome" minlength="10">
+        <p class="texto">E-mail</p>
+        <input type="text"  id="Email">
+        <p class="texto">Comentarios</p>
+        <textarea id="Comentarios" cols="50" rows="7" minlength="20">
+        </textarea>
+    </form>
+    <div>
+        <h3 id="Pesquisa">Pesquisa</h3>
+        <p class="texto">Primeira vez nessa pagina</p>
+        <input type="radio" id="rdSim" >Sim
+        <input type="radio" id="rdNao" >Não
+        <br>
+        <br>
+        <button type="submit" onclick="Validar()" id="btnEnviar">ENVIAR</button>
+        <button type="reset" onclick="Limpar()" id="btnLimpar">LIMPAR</button>
+    </div>
+</body>
+</html>

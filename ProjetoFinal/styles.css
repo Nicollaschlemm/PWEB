@@ -1,4 +1,3 @@
-/* Estilização básica */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -30,9 +29,8 @@ button:hover {
     background-color: darkgreen;
 }
 
-/* Estilização dos Modais */
 .modal {
-    display: none; /* Oculto por padrão */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
@@ -66,7 +64,6 @@ button:hover {
     cursor: pointer;
 }
 
-/* Estilização responsiva */
 @media (max-width: 600px) {
     .container {
         padding: 10px;

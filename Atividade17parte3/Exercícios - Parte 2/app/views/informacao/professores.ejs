@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores | FATEC Sorocaba</title>
+</head>
+<style>
+    table#tabela1 tr td{
+        /*Toda a tabela com fundo creme */
+        background-color: #fff;
+        text-align: center;
+    }
+
+    table#tabela1 tr.cabeca td{
+        background-color: #54082ed3;
+        color: #fff;
+        text-decoration: solid;
+        /* Linhas com fundo cinza */
+    }
+</style>
+<body>
+    <table border="1px" cellpadding="5px" cellspacing="0" id="tabela1" align="center">
+        <tr class="cabeca">
+            <td>Nome</td>
+            <td>E-mail</td>
+        </tr>
+
+        <% console.log('QUANTIDADE DE REGISTROS -> '+ profs.length); %>
+
+        <% for(var i=0; i<profs.length; i++){ %>
+            <tr>
+                <td><%= profs[i].NOME_PROFESSOR %></td>
+                <td><%= profs[i].EMAIL_PROFESSOR %></td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
